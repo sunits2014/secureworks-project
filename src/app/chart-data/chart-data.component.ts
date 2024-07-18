@@ -46,7 +46,7 @@ export class ChartDataComponent implements OnInit, AfterViewInit {
     const data = this.barGraphData;
 
     const svg = d3.select(element).append('svg')
-      .attr("width", this.width + this.margin.left + this.margin.right)
+      .attr("width", "100%")
       .attr("height", this.height + this.margin.top + this.margin.bottom)
       .append("g")
       .attr("transform",

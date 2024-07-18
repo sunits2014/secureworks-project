@@ -13,7 +13,7 @@ ul li a {
 }
 
 .activeLink {
-    background-color: #e1e1e1 !important;
+    /* background-color: #e1e1e1 !important; */
     color: #333 !important;
     opacity: 1 !important;
 }
@@ -21,3 +21,22 @@ ul li a {
 nav {
     top: 0;
 }
+
+.small-menu {
+    top:100%;
+    left:0;
+    background-color: #e1e1e1;
+    z-index: 10000;
+}
+
+@media screen and (max-width: 480px) {
+    .d-0 {
+        display: none;
+    }    
+} 
+
+@media screen and (min-width: 481px) {
+    .small-menu-open {
+        display: none;
+    }    
+} 

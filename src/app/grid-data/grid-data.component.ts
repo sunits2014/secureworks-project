@@ -37,8 +37,7 @@ export class GridDataComponent implements OnInit {
     this.prepareColumnDefs();
   }
 
-  @HostListener('document:keydown.enter')
-  filterRowData() {
+  public filterRowData() {
     this.rowData = this.searchString ? this.rowData.filter(item => { return item.name.includes(this.searchString) }) : this.originalData;
   }
 

@@ -7,7 +7,7 @@ export class HeaderConstants {
 
     static readonly GridData = {
         header: "Grid Data",
-        info: "This is the Grid Component that is making an API call to the GitHub GraphQL API to get the user's repositories. The response is received and Columns are added and Rows assigned."
+        info: "This is the Grid Component that is making an API call to the GitHub GraphQL API to get the user's repositories. The response is received and Columns are added and Rows assigned. The filters are available at the Column level as well as a separate input field. In case of the input field, the data is filtered via a custom filter pipe"
     }
 
     static readonly ChartData = {

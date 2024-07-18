@@ -5,11 +5,11 @@
             <div class="mb-3">
                 <div class="input-group">
                     <span class="input-group-text" id="basic-addon3">Type repository name and press Enter</span>
-                    <input type="text" class="form-control" id="repo-search" aria-describedby="repository search string" [(ngModel)]="searchString" (blur)="filterRowData()">
+                    <input type="text" class="form-control" id="repo-search" aria-describedby="repository search string" [(ngModel)]="searchString">
                 </div>
             </div>
             <ag-grid-angular style="width: 100%; height: 100%;" [paginationPageSizeSelector]="false" [pagination]="true" [paginationPageSize]=15
-                [class]="themeClass" [defaultColDef]="defaultColDef" [rowData]="rowData" [columnDefs]="colDef" />
+                [class]="themeClass" [defaultColDef]="defaultColDef" [rowData]="rowData | filterRow:searchString" [columnDefs]="colDef" />
         </ng-container>
     </div>
 </div>
