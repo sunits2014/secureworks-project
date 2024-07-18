@@ -20,7 +20,7 @@ Run `ng serve` or `ng serve --open` or `ng s -o` for a dev server. If you run th
 
 As soon as you move to the 'Grid Data' or 'Chart Data' routes, the app will make a call to GitHub GraphQL endpoint to fetch the repository data. In this regard, GitHub endpoint expects an authentication token to be in the header of the request.
 
-You can get your GitHub access token from here[https://github.com/settings/apps]. Once you copy this token, please go to 'LocalStorage' of your browser and add a key-value pair there like this:
+You can get your GitHub access token from [here](https://github.com/settings/apps). Once you copy this token, please go to 'LocalStorage' of your browser and add a key-value pair there like this:
 
 ```js
 token: ${your-token}
