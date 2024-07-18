@@ -1,0 +1,23 @@
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #999;
+    opacity: 0.75;
+}
+
+#navMenu {
+    background-color: #ececec;
+}
+
+.activeLink {
+    background-color: #e1e1e1 !important;
+    color: #333 !important;
+    opacity: 1 !important;
+}
+
+nav {
+    top: 0;
+}

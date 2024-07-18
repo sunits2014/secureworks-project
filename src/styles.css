@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+.bg-white {
+    background-color: white;
+    color: #000;
+}

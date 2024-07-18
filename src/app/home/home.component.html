@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <app-header></app-header>
+        <div class="text-left my-5">
+            <p>Below are the requirements:</p>
+            <ul>
+                <ng-container *ngFor="let item of homeData.reqs">
+                    <li><em>{{item}}</em></li>
+                </ng-container>
+            </ul>
+        </div>
+        <div class="text-left my-5">
+            <p>Below is the list of Tech Stack used:</p>
+            <ul>
+                <ng-container *ngFor="let item of homeData.techStack">
+                    <li><em>{{item}}</em></li>
+                </ng-container>
+            </ul>
+        </div>
+        <a routerLink="grid-data">
+            <button class="btn btn-primary">Let's get started</button>
+        </a>
+    </div>
+</div>
