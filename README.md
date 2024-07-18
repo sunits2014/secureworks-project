@@ -2,9 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
+## Configuring the project
+
+Once you have checked out to this project branch, please run the below command to install the dependencies. I am putting the dependency flag keeping in mind the various versions of Angular CLI we all might be having in our systems.
+
+```ts
+npm install --legacy-peer-deps
+```
+
+The above command should install all the dependencies.
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` or `ng serve --open` or `ng s -o` for a dev server. If you run the command with the '--o' flag, a browser tab will open with the app loaded, else navigate to `http://localhost:6001/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
