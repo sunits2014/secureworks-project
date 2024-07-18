@@ -16,6 +16,18 @@ The above command should install all the dependencies.
 
 Run `ng serve` or `ng serve --open` or `ng s -o` for a dev server. If you run the command with the '--o' flag, a browser tab will open with the app loaded, else navigate to `http://localhost:6001/`. The application will automatically reload if you change any of the source files.
 
+## GitHub Token
+
+As soon as you move to the 'Grid Data' or 'Chart Data' routes, the app will make a call to GitHub GraphQL endpoint to fetch the repository data. In this regard, GitHub endpoint expects an authentication token to be in the header of the request.
+
+You can get your GitHub access token from here[https://github.com/settings/apps]. Once you copy this token, please go to 'LocalStorage' of your browser and add a key-value pair there like this:
+
+```js
+token: ${your-token}
+```
+
+This will provide the app the required access token and your call will go through.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
