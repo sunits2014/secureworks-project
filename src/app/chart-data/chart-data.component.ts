@@ -71,7 +71,8 @@ export class ChartDataComponent implements OnInit, AfterViewInit {
       .rangeRound([this.height, 0])
       .domain([0, d3.max(data, d => d.Stars)]);
     svg.append("g")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y))
+      .append("text").attr("x", 0).attr('fill', 'currentColor').attr("y", -50).text("No of stars").style("font-size", "12px").style("transform", "rotate(-90deg)").attr("alignment-baseline","middle")
 
     // appending the bars  
     svg.selectAll('repo-bar')
